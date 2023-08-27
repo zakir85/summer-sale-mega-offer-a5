@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Sale Offer</title>
+    <!-- tailwind and daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- b8a5-summer-sale-zakir85  , assignment-5 ----->
+
+    <!-- Summer Sale Banner section start here -->
+    <Header class="w-full md:flex bg-[#F9F6E2;] ">
+       
+        <div class="md:w-6/12 text-center px-10 pt-40">
+            <h4 class="md:text-3xl font-normal text-[#111111]">---SALE FEVER---</h4>
+            <h1 class="sm:text-4xl lg:text-5xl font-normal text-[#111111]">Purchase TK 200 or <br>
+                above & get <span class="text-[#E527B2]">20% off</span></h1>
+
+            <div class="md:flex justify-center mt-14" >
+                <p class="text-2xl mr-2 font-normal leading-normal  text-[#111111]">Use Promo Code</p>
+                <button class="text-2xl font-normal text-[#fff] bg-[#E527B2] rounded-lg px-3 py-2 ">SELL200</button>
+            </div>
+        </div>
+
+        <div class="md:w-6/12 px-auto md:pt-40 lg:pt-16">
+            <img class="md:w-full " src="./images/Summer 1.png" alt="batch picture">
+        </div>
+    </Header>
+        <!-- Summer Sale Banner section end here -->
+
+
+        <!-- Items section start here -->
+    <main>
+        <section class="max-w-full mx-auto sm:flex-none md:flex">
+            <!------------ Kitchenware section -------------->
+            <section class="w-3/4 py-12 ml-3 mx-auto">
+            <h3 class="text-4xl font-bebas">Kitchenware</h3>
+            <!-------------- Kitchenware container ------------->
+            <div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-3">
+                <!-- Kitchenware item-1 -->
+                <div class="item space-y-3 drop-shadow-lg p-2 text-center bg-[#D2E9E9] rounded-2xl">
+                    <div class="bg-[#F1F1F1;] p-5 rounded-2xl">
+                        <img class="mx-auto" src="./images/prod1.png" alt=""> 
+                    </div>
+                    
+                        <div>
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked/>
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            </div>
+                        </div>
+
+                            <h3 id="product-name" class="text-2xl font-bold">K. Accessories </h3>
+
+                        <div class="">
+                            <p class="text-4xl font-black text-orange-400"><span id="item-price">39.00</span> TK</p>
+                            <!-- button  -->
+                            <button id="btn-shop-now" onclick="handleClickButton(this)" class="py-4 px-5 bg-[#E527B2] uppercase text-white font-medium rounded-lg">
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline font-medium ">
+
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                </svg>
+                            
+                                SHOP NOW</button> 
+
+                        </div>
+
+                </div>
+                <!-- Kitchenware item-2 -->
+                <div class="item space-y-3 drop-shadow-lg p-2 text-center bg-[#D2E9E9] rounded-2xl">
+                    <div class="bg-[#F1F1F1;] p-5 rounded-2xl">
+                        <img class="mx-auto" src="./images/prod2.png" alt=""> 
+                    </div>
+                    
+                        <div>
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked/>
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            </div>
+                        </div>
+
+                            <h3 id="product-name" class="text-2xl font-bold">Bread Maker</h3>
+
+                        <div class="">
+                            <p class="text-4xl font-black text-orange-400"><span id="item-price">25.00</span> TK</p>
+                            <!-- button  -->
+                            <button id="btn-shop-now" onclick="handleClickButton(this)" class="py-4 px-5 bg-[#E527B2] uppercase text-white font-medium rounded-lg">
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline font-medium ">
+
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                </svg>
+                            
+                                SHOP NOW</button> 
+
+                        </div>
+
+                </div>
+                <!-- Kitchenware item-3 -->
+                <div class="item space-y-3 drop-shadow-lg p-2 text-center bg-[#D2E9E9] rounded-2xl">
+                    <div class="bg-[#F1F1F1;] p-5 rounded-2xl">
+                        <img class="mx-auto" src="./images/prod3.png" alt=""> 
+                    </div>
+                    
+                        <div>
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked/>
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            </div>
+                        </div>
+
+                            <h3 id="product-name" class="text-2xl font-bold">Home Cooker</h3>
+
+                        <div class="">
+                            <p class="text-4xl font-black text-orange-400"><span id="item-price">49.00</span> TK</p>
+                            <!-- button  -->
+                            <button id="btn-shop-now" onclick="handleClickButton(this)" class="py-4 px-5 bg-[#E527B2] uppercase text-white font-medium rounded-lg">
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline font-medium ">
+
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                </svg>
+                            
+                                SHOP NOW</button> 
+
+                        </div>
+
+                </div>
+                
+            </div>
+            </section>
+        
+        <!------------- Card section start here ----------------------->
+
+            <section class="md:w-1/4 py-10 px-3 ml-3 sm:flex-none bg-[#A1CCD1]">
+            <div>
+                <h4>Have coupon?</h4>
+                <div class="flex mt-4">           
+                    <input type="text" id="coupon-code-input-field" placeholder="Coupon code" class="input input-bordered w-full max-w-xs uppercase" />
+                    <button id="coupon-apply-btn" class="btn btn-apply bg-[#E527B2] uppercase text-white font-medium" onclick="applyCoupon()">Apply</button>
+                </div>
+                
+            </div>
+
+    <div class="mt-5">
+        <div id="selected-items">
+           <!-- <h2> Selected Items Name:</h2>
+            <p id="selected-item-name"></p>
+            <p id="selected-item-price"></p> -->
+        </div>
+        <hr>
+        <div>
+            <h4>Total Price: <span id="total-price">0.00</span> TK</h4>
+            <h4>Discount: <span id="total-discount">0.00</span> TK</h4>
+            <h4>Grand Total: <span id="grand-total-price">0.00</span> TK</h4>
+        </div>
+        <hr>
+        <!-- Modal area start -->
+        <div class="text-center mx-auto mt-5">
+            <!-- Open the modal using ID.showModal() method -->
+            
+            <button id="purchase-btn" class="btn btn-apply bg-[#E527B2] text-white font-medium w-full" onclick="my_modal_5.showModal()" >Make Purchase</button>
+
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                <form method="dialog" class="modal-box">
+                    <div class="bg-[#F1F1F1;] p-5 rounded-2xl">
+                        <img class="mx-auto" src="./images/congo.png" alt=""> 
+                    </div>
+
+                    <h2 class="py-4 text-4xl">Congratulations!!!</h2>
+                    <p class="py-4 text-2xl">You Purchase the Products, Thank You!</p>
+                    <div class="modal-action justify-center items-center">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button id="reload-button" onclick="reloadPage()" class="btn btn-apply bg-[#E527B2] text-white font-medium">Go Home</button>
+                    </div>
+                </form>
+            </dialog>
+
+        </div>
+
+    </div>
+
+        
+            </section>
+        </section>
+        <!------------ Sportswear section start here -------------->
+        <section class="w-3/4 py-12 ml-3 mx-auto">
+            <h3 class="text-4xl font-bebas">Sportswear</h3>
+            <!-------------- Sportswear container ------------->
+            <div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-3">
+                <!-- Sportswear item-1 -->
+                <div class="item space-y-3 drop-shadow-lg p-2 text-center bg-[#D2E9E9] rounded-2xl">
+                    <div class="bg-[#F1F1F1;] p-5 rounded-2xl">
+                        <img class="mx-auto" src="./images/prod4.png" alt=""> 
+                    </div>
+                    
+                        <div>
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked/>
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            </div>
+                        </div>
+
+                            <h3 id="product-name" class="text-2xl font-bold">Sports Back Cap </h3>
+
+                        <div class="">
+                            <p class="text-4xl font-black text-orange-400"><span id="item-price">49.00</span> TK</p>
+                            <!-- button  -->
+                            <button id="btn-shop-now" onclick="handleClickButton(this)" class="py-4 px-5 bg-[#E527B2] uppercase text-white font-medium rounded-lg">
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline font-medium ">
+
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                </svg>
+                            
+                                SHOP NOW</button> 
+
+                        </div>
+
+                </div>
+                <!-- Sportswear item-2 -->
+                <div class="item space-y-3 drop-shadow-lg p-2 text-center bg-[#D2E9E9] rounded-2xl">
+                    <div class="bg-[#F1F1F1;] p-5 rounded-2xl">
+                        <img class="mx-auto" src="./images/prod5.png" alt=""> 
+                    </div>
+                    
+                        <div>
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked/>
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            </div>
+                        </div>
+
+                            <h3 id="product-name" class="text-2xl font-bold">Full Jersey Set </h3>
+
+                        <div class="">
+                            <p class="text-4xl font-black text-orange-400"><span id="item-price">69.00</span> TK</p>
+                            <!-- button  -->
+                            <button id="btn-shop-now" onclick="handleClickButton(this)" class="py-4 px-5 bg-[#E527B2] uppercase text-white font-medium rounded-lg">
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline font-medium ">
+
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                </svg>
+                            
+                                SHOP NOW</button> 
+
+                        </div>
+
+                </div>
+                <!-- Sportswear item-3 -->
+                <div class="item space-y-3 drop-shadow-lg p-2 text-center bg-[#D2E9E9] rounded-2xl">
+                    <div class="bg-[#F1F1F1;] p-5 rounded-2xl">
+                        <img class="mx-auto" src="./images/prod6.png" alt=""> 
+                    </div>
+                    
+                        <div>
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked/>
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            </div>
+                        </div>
+
+                            <h3 id="product-name" class="text-2xl font-bold">Sports cates</h3>
+
+                        <div class="">
+                            <p class="text-4xl font-black text-orange-400"><span id="item-price">159.00</span> TK</p>
+                            <!-- button  -->
+                            <button id="btn-shop-now" onclick="handleClickButton(this)" class="py-4 px-5 bg-[#E527B2] uppercase text-white font-medium rounded-lg">
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline font-medium ">
+
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                </svg>
+                            
+                                SHOP NOW</button> 
+
+                        </div>
+
+                </div>
+                
+            </div>
+        </section>
+
+        <!------------ Furniture section start here  -------------->
+        <section class="w-3/4 py-12 ml-3 mx-auto">
+            <h3 class="text-4xl font-bebas">Furniture</h3>
+            <!-------------- Furniture container ------------->
+            <div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-3">
+                <!-- Furniture item-1 -->
+                <div class="item space-y-3 drop-shadow-lg p-2 text-center bg-[#D2E9E9] rounded-2xl">
+                    <div class="bg-[#F1F1F1;] p-5 rounded-2xl">
+                        <img class="mx-auto" src="./images/prod7.png" alt=""> 
+                    </div>
+                    
+                        <div>
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked/>
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            </div>
+                        </div>
+
+                            <h3 id="product-name" class="text-2xl font-bold">Single Relax Chair </h3>
+
+                        <div class="">
+                            <p class="text-4xl font-black text-orange-400"><span id="item-price">185.00</span> TK</p>
+                            <!-- button  -->
+                            <button id="btn-shop-now" onclick="handleClickButton(this)" class="py-4 px-5 bg-[#E527B2] uppercase text-white font-medium rounded-lg">
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline font-medium ">
+
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                </svg>
+                            
+                                SHOP NOW</button> 
+
+                        </div>
+
+                </div>
+                <!-- Furniture item-2 -->
+                <div class="item space-y-3 drop-shadow-lg p-2 text-center bg-[#D2E9E9] rounded-2xl">
+                    <div class="bg-[#F1F1F1;] p-5 rounded-2xl">
+                        <img class="mx-auto" src="./images/prod8.png" alt=""> 
+                    </div>
+                    
+                        <div>
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked/>
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            </div>
+                        </div>
+
+                            <h3 id="product-name" class="text-2xl font-bold">Children play </h3>
+
+                        <div class="">
+                            <p class="text-4xl font-black text-orange-400"><span id="item-price">299.00</span> TK</p>
+                            <!-- button  -->
+                            <button id="btn-shop-now" onclick="handleClickButton(this)" class="py-4 px-5 bg-[#E527B2] uppercase text-white font-medium rounded-lg">
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline font-medium ">
+
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                </svg>
+                            
+                                SHOP NOW</button> 
+
+                        </div>
+
+                </div>
+                <!-- Furniture item-3 -->
+                <div class="item space-y-3 drop-shadow-lg p-2 text-center bg-[#D2E9E9] rounded-2xl">
+                    <div class="bg-[#F1F1F1;] p-5 rounded-2xl">
+                        <img class="mx-auto" src="./images/prod9.png" alt=""> 
+                    </div>
+                    
+                        <div>
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked/>
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            </div>
+                        </div>
+
+                            <h3 id="product-name" class="text-2xl font-bold">Flexible Sofa</h3>
+
+                        <div class="">
+                            <p class="text-4xl font-black text-orange-400"><span id="item-price">339.00</span> TK</p>
+                            <!-- button  -->
+                            <button id="btn-shop-now" onclick="handleClickButton(this)" class="py-4 px-5 bg-[#E527B2] uppercase text-white font-medium rounded-lg">
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline font-medium ">
+
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                </svg>
+                            
+                                SHOP NOW</button> 
+
+                        </div>
+
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+
+<script src="sale.js"></script>
+</body>
+</html>
